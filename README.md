@@ -4,4 +4,6 @@
 # Task
 * ~~pagesとcomponentsを設定する~~
 * useStateを試す
-* Vuetify3を試す
+* Vue3を試す
+* ~~Vuetify3を試す~~
+* いろんな機能をもったアプリを作成
