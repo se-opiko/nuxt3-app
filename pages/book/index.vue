@@ -1,5 +1,0 @@
-<template>
-  <div>
-    <common-button/>
-  </div>
-</template>
