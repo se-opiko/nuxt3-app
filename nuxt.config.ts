@@ -6,6 +6,15 @@ export default defineNuxtConfig({
   typeCheck: true,
   components: {
     global: true,
-    dirs: ['~/components']
+    dirs: ['~/components/common']
+  },
+  css: ["vuetify/lib/styles/main.sass"],
+  build: {
+    transpile: ["vuetify"],
+  },
+  vite: {
+    define: {
+      "process.env.DEBUG": false,
+    },
   },
 })
