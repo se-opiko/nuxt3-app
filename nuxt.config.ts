@@ -16,5 +16,14 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false,
     },
+    server: {
+      watch: {
+        usePolling: true
+      }
+    }
+  },
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    treeShake: true
   },
 })

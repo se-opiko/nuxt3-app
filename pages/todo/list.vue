@@ -3,6 +3,26 @@
     <v-app-bar-title>タスクリスト</v-app-bar-title>
   </v-app-bar>
   <v-main>
-    
+    <v-btn size="large">てすと</v-btn>
+    <data-table
+      :headers="headers"
+    ></data-table>
   </v-main>
 </template>
+
+<script setup lang="ts">
+  const headers = [
+    {
+        text: '名前',
+        value: 'name'
+    },
+    {
+        text: '年齢',
+        value: 'old'
+    },
+    {
+        text: '性別',
+        value: 'sex'
+    },
+  ]
+</script>
