@@ -8,7 +8,9 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components/common']
   },
-  css: ["vuetify/lib/styles/main.sass"],
+  css: [
+    "vuetify/lib/styles/main.sass",
+],
   build: {
     transpile: ["vuetify"],
   },
@@ -19,11 +21,24 @@ export default defineNuxtConfig({
     server: {
       watch: {
         usePolling: true
-      }
-    }
+      },
+    },
   },
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true
   },
+  buildModules: [
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: [
+          // automatically imports `usePinia()`
+          'defineStore',
+          // automatically imports `usePinia()` as `usePiniaStore()`
+          ['defineStore', 'definePiniaStore'],
+        ],
+      },
+    ],
+  ],
 })

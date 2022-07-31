@@ -11,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+  import {useSearchStore} from '@/store/ordersearch'
   const headers = [
     {
         text: '名前',
