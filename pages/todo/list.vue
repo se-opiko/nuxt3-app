@@ -3,7 +3,6 @@
     <v-app-bar-title>タスクリスト</v-app-bar-title>
   </v-app-bar>
   <v-main>
-    <v-btn size="large">てすと</v-btn>
     <data-table
       :headers="headers"
     ></data-table>

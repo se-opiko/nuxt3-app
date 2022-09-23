@@ -4,10 +4,6 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   strict: true,
   typeCheck: true,
-  components: {
-    global: true,
-    dirs: ['~/components/common']
-  },
   css: [
     "vuetify/lib/styles/main.sass",
 ],
