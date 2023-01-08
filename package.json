@@ -12,10 +12,11 @@
   "dependencies": {
     "@mdi/font": "^7.0.96",
     "@mdi/js": "^7.0.96",
-    "@pinia/nuxt": "^0.3.1",
     "@nuxt/kit": "^3.0.0-rc.8",
+    "@pinia/nuxt": "^0.3.1",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
-    "vuetify": "3.0"
+    "vuetify": "^3.1.0",
+    "yarn": "^1.22.19"
   }
 }

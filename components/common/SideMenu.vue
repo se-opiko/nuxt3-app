@@ -56,11 +56,20 @@ const listItems = [
   },
   { type: "divider" },
   {
-    title: "image",
+    title: "イメージ",
     value: 7,
     props: {
       prependIcon: "mdi-wrench",
       to: "/image",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "テーブル",
+    value: 8,
+    props: {
+      prependIcon: "mdi-wrench",
+      to: "/table",
     },
   },
   { type: "divider" },
