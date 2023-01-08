@@ -1,3 +1,81 @@
+<script setup lang="ts">
+const listItems = [
+  { type: "divider" },
+  {
+    title: "ホーム",
+    value: 1,
+    props: {
+      prependIcon: "mdi-home",
+      to: "/",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "TODOリスト",
+    value: 2,
+    props: {
+      prependIcon: "mdi-text-box-check-outline",
+      to: "/todo/list",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "アラート",
+    value: 3,
+    props: {
+      prependIcon: "mdi-wrench",
+      to: "/alert",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "アバター",
+    value: 4,
+    props: {
+      prependIcon: "mdi-wrench",
+      to: "/avatar",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "バッジ",
+    value: 5,
+    props: {
+      prependIcon: "mdi-wrench",
+      to: "/badge",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "youtube",
+    value: 6,
+    props: {
+      prependIcon: "mdi-youtube",
+      to: "/youtube",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "イメージ",
+    value: 7,
+    props: {
+      prependIcon: "mdi-wrench",
+      to: "/image",
+    },
+  },
+  { type: "divider" },
+  {
+    title: "テーブル",
+    value: 8,
+    props: {
+      prependIcon: "mdi-wrench",
+      to: "/table",
+    },
+  },
+  { type: "divider" },
+];
+</script>
+
 <template>
   <v-navigation-drawer color="menu">
     <div class="text-white text-h5 font-weight-bold pt-3 pl-12">
@@ -11,72 +89,3 @@
     </div>
   </v-navigation-drawer>
 </template>
-
-<script setup lang="ts">
-const listItems = [
-  { type: "divider" },
-  {
-    title: "ホーム",
-    value: 1,
-    props: {
-      prependIcon: "mdi-home",
-      href: "/",
-    },
-  },
-  { type: "divider" },
-  {
-    title: "TODOリスト",
-    value: 2,
-    props: {
-      prependIcon: "mdi-text-box-check-outline",
-      href: "/todo/list",
-    },
-  },
-  { type: "divider" },
-  {
-    title: "アラート",
-    value: 3,
-    props: {
-      prependIcon: "mdi-wrench",
-      href: "/alert",
-    },
-  },
-  { type: "divider" },
-  {
-    title: "アバター",
-    value: 4,
-    props: {
-      prependIcon: "mdi-wrench",
-      href: "/avatar",
-    },
-  },
-  { type: "divider" },
-  {
-    title: "バッジ",
-    value: 5,
-    props: {
-      prependIcon: "mdi-wrench",
-      href: "/badge",
-    },
-  },
-  { type: "divider" },
-  {
-    title: "youtube",
-    value: 6,
-    props: {
-      prependIcon: "mdi-youtube",
-      href: "/youtube",
-    },
-  },
-  { type: "divider" },
-  {
-    title: "image",
-    value: 7,
-    props: {
-      prependIcon: "mdi-wrench",
-      href: "/image",
-    },
-  },
-  { type: "divider" },
-];
-</script>
